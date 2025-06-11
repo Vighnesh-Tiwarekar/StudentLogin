@@ -1,0 +1,21 @@
+.sidebar img
+{
+    filter: grayscale(1);
+}
+
+.topbar
+{
+    box-sizing: border-box;
+}
+
+.status::after
+{
+    content: '';
+    height: 18px;
+    width: 18px;
+    background-color: #62ae62;
+    position: absolute;
+    left: 5px;
+    border-radius: 20px;
+
+}
