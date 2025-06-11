@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      {/* <Navbar></Navbar> */}
+      <Navbar></Navbar>
       {/* <LoginScreen></LoginScreen>
 
       <Home></Home>

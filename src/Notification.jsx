@@ -6,7 +6,7 @@ import drop from './assets/downarrow.png'
 
 export default function Notification() {
 
-    const [notifications, setnotifications] = useState([]);
+    const [notifications, setNotifications] = useState([]);
     const [year, setyear] = useState(() => new Date().getFullYear());
     const [isfocus,setisfocus] = useState(false)
 
@@ -23,6 +23,7 @@ export default function Notification() {
                 setNotifications(data);
             } catch (err) {
                 console.log(err);
+                console.log('Data couldnt be fetched')
             }
         };
 
@@ -88,7 +89,7 @@ export default function Notification() {
                 </form>
             </div>
 
-            {notifications.length ? null : <EmptyNotification></EmptyNotification>}
+            {notifications.length? null : <EmptyNotification></EmptyNotification>}
         </div>
     )
 }
